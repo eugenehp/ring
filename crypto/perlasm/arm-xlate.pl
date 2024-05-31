@@ -167,6 +167,10 @@ if ($flavour =~ /linux/) {
     # Although the flavour is specified as "ios", it is really used by all Apple
     # platforms.
     $target_defines = "defined(__APPLE__)";
+} elsif ($flavour =~ /visionos/) {
+    # Although the flavour is specified as "visionos", it is really used by all Apple
+    # platforms.
+    $target_defines = "defined(__APPLE__)";
 } elsif ($flavour =~ /win/) {
     $target_defines = "defined(_WIN32)";
 } else {
